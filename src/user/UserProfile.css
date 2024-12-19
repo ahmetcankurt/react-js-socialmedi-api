@@ -1,0 +1,79 @@
+/* Profil kartı stil düzenlemeleri */
+.user-card {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .user-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .user-card-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .user-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .user-profile-image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .user-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .user-id {
+    font-size: 0.875rem;
+    color: #6c757d;
+  }
+  
+  .user-info {
+    font-size: 1rem;
+    margin: 15px 0;
+  }
+  
+  .user-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .user-actions .btn {
+    width: 45%;
+  }
+  
+  .user-list-container {
+    padding: 20px;
+  }
+  
+  .user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  

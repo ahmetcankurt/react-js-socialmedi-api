@@ -1,0 +1,31 @@
+/* ProfilImage.css */
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* İki görsel arasındaki boşluk */
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.full-width-image {
+  width: 100%;
+  height: 350px; /* Sabit bir yükseklik */
+  object-fit: cover; /* Görselin kırpılmasını sağlar, ancak düzgün sığdırır */
+  display: block;
+}
+
+
+
+.center-bottom-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /* Görseli kırpar, ama tam sığdırır */
+  position: absolute;
+  bottom: 10px; /* Konumun ayarlanması için */
+  transform: translateY(50%); /* Orta kısmın en altına indirir */
+  background: white; /* Arka plan rengi */
+  border-radius: 50%; /* Yuvarlak görsel için */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}

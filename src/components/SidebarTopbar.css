@@ -1,0 +1,102 @@
+.sidebar-topbar-container {
+  display: flex; /* Flex kullanarak yan yana yerleştirme */
+}
+
+.sidebar {
+  height: 100vh; /* Tüm yüksekliği kapla */
+  width: 320px;
+  background-color: #f7f8fa;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%); /* Sidebar başlangıçta görünmeyecek */
+  position: fixed; /* Sidebar'ı sabit yapıyoruz */
+}
+
+.sidebar.open {
+  transform: translateX(0); /* Açıldığında görünür hale gelir */
+}
+
+.sidebar-header {
+  background-color: #f7f8fa;
+  color: black;
+  font-size: 20px;
+  text-align: right;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.sidebar-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sidebar-content {
+  color: black;
+}
+
+.main-content {
+  width: 100%;
+  transition: margin-left 0.3s ease; /* Sidebar açıldığında geçiş efekti */
+}
+
+.main-content.expanded {
+  margin-left: 320px; /* Sidebar açıkken bırakılacak boşluk */
+}
+
+.topbar {
+  height: 64px; /* topbar yüksekliği */
+  background-color: #f7f8fa; /* topbar arka plan rengi */
+  color: black; /* topbar yazı rengi */
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.2); 
+}
+
+.topbar-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.topbar-content {
+  font-size: 20px;
+  color: black;
+  width: 100%;
+  text-align: center; /* Başlık kısmını ortala */
+}
+
+.editor-content {
+  padding: 15px; /* İçeriği biraz boşlukla ayır */
+}
+
+
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column; /* Menü öğelerini dikey hizala */
+  padding: 15px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center; /* İkon ve yazıyı dikeyde ortala */
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  color: #333;
+  text-decoration: none; /* Alt çizgiyi kaldır */
+}
+
+.menu-item:hover {
+  background-color: #e0e0e0;
+}
+
+.menu-icon {
+  margin-right: 10px; /* İkon ile yazı arasında boşluk bırak */
+  font-size: 18px;
+}
+
+
